@@ -57,6 +57,12 @@ document.getElementById("N1").replaceWith(newChildNode);
 
 // TODO: Remove the "New Child Node"
 
+setTimeout(() => {
+  if (newChildNode.parentNode) {
+    newChildNode.parentNode.removeChild(newChildNode);
+  }
+}, 4000);
+
 /*----------- Exercise #4: LIST ITEMS ----------- */
 // Use the following array of values to generate a list on the DOM
 
